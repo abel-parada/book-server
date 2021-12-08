@@ -1,4 +1,5 @@
-// This access the Storage (book.json) and either reads it or writes it
+//First program layer. User does NOT see this.
+//This access the Storage (book.json) and either reads it or writes it
 
 'use strict';
 
@@ -6,7 +7,7 @@ const fs = require('fs').promises;
 
 async function readStorage(storageFilePath){
     try{
-        const data = await fs.readFile(stoageFilePath, 'utf8');
+        const data = await fs.readFile(storageFilePath, 'utf8');
         return JSON.parse(data);
     }
     catch(error){

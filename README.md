@@ -40,7 +40,7 @@ These are the functions available to API users
 
   - returns an array of all books / []
 
-- getOne(id)
+- getOne(bookID)
 
   - returns a book object / NOT_FOUND
 
@@ -52,7 +52,7 @@ These are the functions available to API users
 
   - returns UPDATE_OK / NOT_UPDATED
 
-- remove(id)
+- remove(bookID)
 
   - returns REMOVE_OK / NOT_FOUND / NOT_REMOVED
 
