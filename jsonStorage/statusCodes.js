@@ -13,6 +13,7 @@ const CODES = {
 }
 
 const MESSAGES = {
+
     PROGRAM_ERROR: () => ({
       message: "Sorry! Error in the program",
       code: CODES.PROGRAM_EROR,
@@ -23,17 +24,17 @@ const MESSAGES = {
       code:CODES.NOT_FOUND,
       type:'error'
     }),
-    INSERT_OK: bookID=>({
+    INSERT_OK: bookID =>({
       message: `Book ${bookID} was inserted`,
       code:CODES.INSERT_OK,
       type:'info'
     }),
-    NOT_INSERTED: ()=>({
+    NOT_INSERTED: () =>({
         message: `Book was not inserted`,
         code: CODES.NOT_INSERTED,
         type: 'error'
     }),
-    ALREADY_IN_USE:bookID=>({
+    ALREADY_IN_USE: bookID =>({
         message: `ID ${bookID} is already in use`,
         code: CODES.ALREADY_IN_USE,
         type: 'error'
@@ -48,12 +49,12 @@ const MESSAGES = {
         code: CODES.NOT_REMOVED,
         type: 'error'
     }),
-    UPDATE_OK: bookID=>({
+    UPDATE_OK: bookID =>({
         message: `Book with ID ${bookID} is updated`,
         code: CODES.UPDATE_OK,
         type: 'info'
     }),
-    NOT_UPDATED: ()=>({
+    NOT_UPDATED: () =>({
         message: `Data was not updated`,
         code: CODES.NOT_UPDATED,
         type:'error'

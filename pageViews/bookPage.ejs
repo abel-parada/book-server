@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Query result</title>
+</head>
+<body>
+    <main>
+        <h1>Book info</h1>
+        <p>ID: <%= result.bookID %></p>
+        <p>Name: <%= result.name %></p>
+        <p>Author: <%= result.author %></p>
+        <p>Amount in stock: <%= result.numberOfBooks %></p>
+        <p>Pages: <%= result.pages %></p>
+        <a href="/getBook"><button>Back</button></a>
+        <a href="/"><button>To main menu</button></a>
+    </main>
+</body>
+<footer>
+    <p>Abel Parada. &copy; 2021. Visit my <strong><a href="https://github.com/abel-parada">Github Account</a></strong></p>
+</footer>
+</html>
