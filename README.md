@@ -76,11 +76,11 @@ These are the functions available to API users
 
   - returns an array of books / []
 
-- getOneFromStorage(id)
+- getOneFromStorage(bookID)
 
   - returns a book object / null
 
-- addToStorage(newEmployee)
+- addToStorage(newBook)
 
   - returns true/false
 
@@ -88,7 +88,7 @@ These are the functions available to API users
 
   - returns true/false
 
-- removeFromStorage (id)
+- removeFromStorage (bookID)
   - returns true/false
 
 ### status codes and messages

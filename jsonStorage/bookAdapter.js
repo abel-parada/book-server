@@ -7,7 +7,9 @@ const adapt = (item) => {
         bookID: +item.bookID,
         name: item.name,
         author:item.author,
-        numberOfBook= +item.numberOfBook,
+        numberOfBooks: +item.numberOfBooks,
         pages: +item.pages
     }
 }
+
+module.exports = {adapt};
