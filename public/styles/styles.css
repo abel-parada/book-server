@@ -6,6 +6,47 @@ footer {
   justify-items: center;
 }
 
+form p {
+  font-size: 12px;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  background-color: white;
+  width: 320px;
+  margin: 50px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+form input {
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 8px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+button[type="submit"] {
+  background-color: rgba(219, 250, 133, 0.884);
+  border: solid 1px black;
+  border-radius: 12px;
+  text-transform: uppercase;
+  /* margin: 5px auto; */
+  width: 100%;
+  font-size: 16px;
+}
+
 input[readonly] {
   background-color: lightgrey;
 }

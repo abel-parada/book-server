@@ -43,9 +43,16 @@
     },
     {
         "bookID": 4,
-        "name": "The adventures of Mike the Millipede",
+        "name": "The adventures of Mike the Millipede UPDATED",
         "author": "Emily White",
         "numberOfBooks": 15,
         "pages": 350
+    },
+    {
+        "bookID": 66,
+        "name": "Adventures of a Muchi",
+        "author": "Sohvi Peltoniemi",
+        "numberOfBooks": 1,
+        "pages": 999
     }
 ]

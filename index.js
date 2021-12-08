@@ -50,6 +50,58 @@ app.get('/removeBook', (req,res) => res.render('getOne',{
     action: '/removeBook'
 }));
 
+app.get('/inputform', (req,res) => res.render('form',{
+    title: 'Add a book',
+    header: 'Add new book',
+    action: '/insert',
+    bookID: {value:'',readonly:''},
+    name: {value:'',readonly:''},
+    author: {value:'', readonly:''},
+    numberOfBooks: {value:'',readonly:''},
+    pages:{value:'',readonly:''}
+}))
+
+app.post('/insert', (req,res) => {
+    if(!req.body) res.sendStatus(500);
+    dataStorage.insert(req.body)
+        .then(status => sendStatusPage(res,status))
+        .catch(error => sendErrorPage(res,error));
+})
+
+app.get('/updateform', (req,res) => res.render('form',{
+    title: 'Book data update',
+    header: 'Update info on a book',
+    action: '/update-book-data',
+    bookID: {value:'',readonly:''},
+    name: {value:'',readonly:'readonly'},
+    author: {value:'', readonly:'readonly'},
+    numberOfBooks: {value:'',readonly:'readonly'},
+    pages:{value:'',readonly:'readonly'}
+}));
+
+app.post('/update-book-data', (req,res) => {
+    if(!req.body) res.sendStatus(500);
+    dataStorage.getOne(req.body.bookID)
+    .then( book => res.render('form',{
+        title: 'Book data update',
+    header: 'Update info on a book',
+    action: '/update',
+    bookID: {value: book.bookID,readonly:'readonly'},
+    name: {value: book.name,readonly:''},
+    author: {value: book.author, readonly:''},
+    numberOfBooks: {value: book.numberOfBooks,readonly:''},
+    pages:{value: book.pages,readonly:''}
+    }))
+    .catch(error=>sendErrorPage(res,error));
+});
+
+app.post('/update',(req,res)=> {
+    if(!req.body) res.sendStatus(500);
+    dataStorage.update(req.body)
+        .then(status=>sendStatusPage(res,status))
+        .catch(error=>sendErrorPage(res,error))
+});
+
 app.post('/removeBook', (req,res)=>{
     if(!req.body) res.sendStatus(500);
 

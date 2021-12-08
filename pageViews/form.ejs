@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <title><%= title %></title>
+</head>
+<body>
+    <main>
+        <h1><%= header %></h1>
+        <form action="<%= action %>" method="POST" class="container">
+            <div>
+                <p>
+                    <label for="bookID">Book ID</label>
+                    <input type="text" id="bookID" name="bookID" size="5" value="<%= bookID.value%>" <%= bookID.readonly%>>
+                </p>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" size="15" value="<%= name.value%>" <%= name.readonly%>>
+                </p>
+                <p>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" size="30" value="<%= author.value%>" <%= author.readonly%>>
+                </p>
+                <p>
+                    <label for="numberOfBooks">Number of Books in Stock</label>
+                    <input type="text" id="numberOfBooks" name="numberOfBooks" size="5" value="<%= numberOfBooks.value%>" <%= numberOfBooks.readonly%>>
+                </p>
+                <p>
+                    <label for="pages">Pages</label>
+                    <input type="text" id="pages" name="pages" size="15" value="<%= pages.value%>" <%= pages.readonly%>>
+                </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/"><button>To main menu</button></a>
+    </main>
+</body>
+<footer>
+    <p>Abel Parada. &copy; 2021. Visit my <strong><a href="https://github.com/abel-parada">Github Account</a></strong></p>
+</footer>
+</html>
