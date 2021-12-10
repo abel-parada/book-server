@@ -54,5 +54,12 @@
         "author": "Sohvi Peltoniemi",
         "numberOfBooks": 1,
         "pages": 999
+    },
+    {
+        "bookID": 32,
+        "name": "Chronicles of a Chef programmer. UPDATED",
+        "author": "Abel Parada",
+        "numberOfBooks": 98,
+        "pages": 150
     }
 ]

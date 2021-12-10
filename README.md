@@ -1,4 +1,49 @@
-# API: Book data storage
+# API: Book data storage/server
+
+This project handles data with a express server.
+
+The app gives errors if not used correctly.
+
+## Technologies used
+
+Built with:
+
+- HTML
+- JS
+- CSS
+- Node
+- Express
+- Ejs
+
+## Setup and usage
+
+### In root folder: `node index.js`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Screenshots
+
+![alt text](/Images/main.png) "Main menu options"
+
+![alt text](/Images/library.png) "Existing library at the time"
+
+![alt text](/Images/error.png) "Error example"
+
+## Sources
+
+- Business College Helsinki. Node & Express lessons.
+
+## Authors and acknowledgment
+
+Abel Parada
+
+- [GitHub @abel-parada](https://github.com/abel-parada)
+- [LinkedIn](https://www.linkedin.com/in/abelparadamillan/)
+
+---
+
+# Technical specs & layers
 
 ## book.json
 
